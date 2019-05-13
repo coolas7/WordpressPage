@@ -1,0 +1,413 @@
+@import 'fonts';
+
+$Lato:'Lato', sans-serif;
+$BebasNeue: 'BebasNeue', sans-serif;
+$Gotham: 'Gotham', sans-serif;
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  line-height: 1;
+  }
+
+ body {
+  margin: 0;
+  padding: 0;
+  height:100%;
+}
+
+.page-container {
+  position: relative;
+  min-height:100%;
+  padding-bottom: 150px;
+}
+
+.menu-item {
+	font-size: 16px;
+	padding: 0 0 0 25px !important;
+	font-family: $Lato;
+	a {	color: white !important;
+		text-decoration: none !important;}
+}
+
+.logo {
+	margin-top: -1.5vw;
+	margin-left: 10vw;
+	width: 70%;
+	height: auto;
+}
+
+.navbar-toggler-icon {
+	color: white !important;
+}
+.navbar-toggler {
+	color: white !important;
+	background-color: white !important;
+	float: right !important;
+	margin-right: 15px !important;
+}
+
+.navbar {
+	justify-content: flex-end !important;
+}
+
+.navbar-nav {
+  float: right;
+}
+
+#navi {
+  overflow: hidden;
+}
+
+.footer-container {
+  background-color: #fff;
+  position: absolute;
+  height: auto;
+  width: 100%;
+  bottom: 0;
+}
+
+.menu-img {
+	width: 100%;
+	height: 100%;	
+}
+
+.p-top {
+	padding-top: 15px;
+}
+
+.p-top2 {
+	padding-top: 20px;
+}
+
+.p-left {
+	padding-left: 7.5px !important; 
+}
+
+.p-right {
+	padding-right: 7.5px !important;
+}
+
+.top-container {
+	background-image: url('../img/Photo.jpg');
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-size: cover;
+	height: 58.264vw;
+	width: 1440px;
+}
+
+.top-text {		
+	padding-top: 22vw;
+	padding-left: 7vw !important;
+	position: absolute !important;
+}
+
+.titles {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	margin: 50px 25px;
+	h1 {
+	font-family: $BebasNeue;
+	color: #fff;
+	font-size: 5.5vw;	
+	line-height: 6.5vw;
+	margin:0 0 50px 30px;}
+	h3 {
+	font-family: $BebasNeue;
+	color: #fff;
+	font-size: 52px;	
+	line-height: 56px;
+	margin-bottom: 50px;}
+	p {
+	font-family: $Gotham;
+	color: #fff;
+	font-size: 14px;
+	line-height: 20px;
+	}
+
+}
+
+@mixin buttons {	
+	color: #fff; 
+	font-size: 14px;
+	background-color: rgba(225,225,225, 0.6);
+	border: none;
+	text-transform: uppercase;
+	&:hover {background-color: rgba(225,225,225, 0.9);
+	text-decoration: none;}
+} 
+
+.bttn { @include buttons;
+	font-family: $Gotham;
+	padding: 15px 50px;
+}
+
+.explore-btn { @include buttons;
+	font-family: $Gotham;
+	padding: 15px 40px;
+	margin-left: 30px;
+}
+
+.bttn2 { @include buttons;
+	font-family: $Lato;
+	padding: 15px 35px;
+	margin: 27px 15px 0 0;
+	float: right;
+
+}
+
+.contact-container {
+	background-color: #212121;
+	border:none;
+	margin-top: 15px;
+	margin-right: 15px;
+	height: 49.2%;
+ 	div {
+ 		p {
+		color: #fff;
+		font-size: 16px;
+		font-family: $Lato;
+		}
+		h4 {
+		color: #fff;
+		font-size: 25px;
+		font-family: $Lato;
+		line-height: 42px;
+		margin-bottom: 50px;}
+	}
+}
+
+.contact-margins {
+	margin: 70px 0px 0 40px;
+}
+
+.blog-container {
+	background-color: #444;
+	width: 100%;
+	height: 49%;
+	overflow: hidden !important;
+	a>h3 {
+	color: black;
+	font-family: $BebasNeue;
+	font-size: 36px;
+	line-height: 36px;
+	margin-top: 10px;
+	text-transform: uppercase;
+	padding:0 20px;
+	}
+}
+
+.ourBlog {
+	color: black;
+	font-family: $Gotham;
+	font-size: 16px;
+	margin-top: 50px;
+	text-transform: uppercase;
+	padding-left: 20px;
+}
+
+.date-padding {
+	font-family: $Gotham;
+	padding: 110px 0 0 20px;
+	font-size: 14px;
+	color: black;
+	text-transform: uppercase;
+}
+
+.blog-text {
+	font-family: 'Gotham-Light', sans-serif;
+	font-size: 18px;
+	color: black;
+	padding:0 20px;
+}
+
+.footer-text {
+	font-family: 'Helvetica', sans-serif;
+	color: black;
+	font-size: 12px;
+	text-transform: uppercase;
+	float: right;
+	margin-bottom: 38px;
+}
+
+.footer-icon a{ 	
+	padding-top: 10px;	
+	img {
+	margin: 20px 0 0 15px;
+	float: right;
+	height: 45px;
+	width: auto;}
+}
+
+
+@media screen and (max-width: 1300px) {
+	.titles {
+		margin: 60px 40px;
+		h3 {
+		font-size: 45px;	
+		line-height: 40px;}
+	}
+	.blog-container a>h3 {
+		font-size: 30px;
+		line-height: 30px;
+	}
+	.blog-text {
+		font-size: 14px;
+	}
+	.date-padding {
+		padding: 70px 0 0 20px;
+	}
+	.contact-container div{
+		p {
+		font-size: 14px;}
+		h4 {
+		font-size: 18px;
+		line-height: 30px;}
+	}
+	.contact-margins {
+		margin: 50px 0px 0 30px;	
+	}
+
+}
+
+@media screen and (max-width: 1150px) {
+	.titles {
+		margin: 50px 30px;
+	h3 {
+		font-size: 34px;
+		line-height: 30px;}
+	p {
+	font-size: 14px;
+	line-height: 16px;}
+	}
+	.blog-container a>h3 {
+		font-size: 24px;
+		line-height: 20px;
+	}
+	.date-padding {
+		padding: 40px 0 0 20px;
+	}
+	.contact-margins {
+		margin: 40px 0px 0 20px;	
+	}
+	footer {
+		margin-top: 20px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.contact-margins {
+		margin: 30px 0px 0 20px;	
+	}
+	.date-padding {
+		padding: 20px 0 0 20px;
+	}
+	.ourBlog {
+		margin-top: 20px;
+	}
+	.contact-container div>h4 {
+	font-size: 16px;
+	line-height: 26px;
+	margin-bottom: 15px;
+	}
+	.footer-icon img {
+	width: 38px;
+	float: right;
+	}
+	.footer-text {
+	font-size: 10px;
+	}
+	.menu-item{
+	padding: 0 0 0 15px !important;
+	}
+	.logo {
+		margin-left: 6vw;
+		margin-top: -3vw;
+		width: 100%;
+	}
+	.titles {
+		margin: 15px 15px;
+		h3 {
+		font-size: 30px;
+		line-height: 24px;
+		margin-bottom: 33px;  }
+	}
+	.contact-container div {
+		h4 {
+		font-size: 14px;
+		line-height: 20px;}
+ 		p {
+		font-size: 12px;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.footer-icon {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: flex-end;
+		a{ padding-top: 5px;	
+		img {
+		margin-left: 5px;
+		height: 35px;}
+		}
+	}
+	.top-text {		
+	padding-top: 20vw;
+	padding-left: 4vw !important;
+	}
+	.explore-btn, .bttn {
+		padding: 8px 25px;
+	}
+	.bttn2 {
+	padding: 7px 25px;
+	margin: 17px 15px 0 0;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.p-left {
+	padding-left: 15px !important; 
+	}
+	.p-right {
+	padding-right: 15px !important;
+	}
+	.titles {
+		margin: 30px;
+	h3 {
+		font-size: 38px;
+		line-height: 30px;}
+	h1 {margin-bottom: 10px;}
+	}
+	.top-text {		
+	padding-top: 17vw;
+	}
+	.explore-btn {
+		padding: 8px 8px;
+		font-size: 9px;
+	}
+}
+
+@media screen and (max-width: 376px) {
+	.footer-logo img {
+		width: 80px;
+	}
+	.titles {
+		margin: 25px 10px;
+	h3 {
+		font-size: 28px;
+		line-height: 24px;}
+	}
+	.logo {
+		margin-left: 6vw;
+		margin-top: -8vw;
+		width: 130%;
+	}
+}
